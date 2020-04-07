@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[node name="vara" type="StaticBody2D"]
+position = Vector2( 19.1241, 0 )
+scale = Vector2( 0.210272, 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 1, 1 )
+polygon = PoolVector2Array( -31.2094, -1.27349, -61.768, -1.40201, -31.8206, 4.38106, -61.1568, 4.38106, -31.8206, 10.1641, -60.5457, 10.1641, -31.8206, 15.8187, -60.5457, 15.6902, -32.4318, 21.4732, -59.3233, 21.3447, -32.4318, 25.8427, -31.2094, 31.2402, -24.4865, 32.0113, 24.4717, 32.1398, 30.5834, 30.4691, 31.1946, -30.1888, 26.3052, -31.731, -26.8668, -31.6025, -29.9227, -29.6748, -29.9227, -14.3818, -61.0924, -14.5103, -32.9785, -9.24128, -60.4813, -8.98425 )
+
+[node name="KinematicBody2D" type="Sprite" parent="."]
+texture = ExtResource( 1 )

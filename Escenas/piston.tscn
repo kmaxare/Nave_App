@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Nave/varas.png" type="Texture" id=1]
+[ext_resource path="res://Escenas/Caja_interior.gd" type="Script" id=2]
+
+[node name="piston" type="Sprite"]
+position = Vector2( 7.18949, 9.05781 )
+texture = ExtResource( 1 )
+centered = false
+hframes = 3
+frame = 2
+script = ExtResource( 2 )
+
+[node name="Sprite" type="StaticBody2D" parent="."]
+position = Vector2( 1.46336, 2.39419 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite"]
+polygon = PoolVector2Array( -0.34038, -2.22708, 0.409856, -2.22708, 0.430132, 2.49738, -0.360656, 2.49738 )
